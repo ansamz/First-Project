@@ -10,10 +10,10 @@ import json
 import geojson
 from copy import deepcopy
 
-with open('../my-first-streamlitapp/template_project/data/georef-switzerland-kanton.geojson') as f:
+with open('../template_project/data/georef-switzerland-kanton.geojson') as f:
     gs = json.load(f)
 
-ren_en_df = pd.read_csv("../my-first-streamlitapp/template_project/data/renewable_power_plants_CH.csv")
+ren_en_df = pd.read_csv("../template_project/data/renewable_power_plants_CH.csv")
 ren_en_df.head()
 
 st.markdown("<h1 style='text-align: center; color: red;'>Electricity production plants in Switzerland</h1>", unsafe_allow_html=True)
