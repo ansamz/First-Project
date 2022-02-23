@@ -9,10 +9,10 @@ import numpy as np
 import json
 import geojson
 from copy import deepcopy
-
+@st.cache
 with open('./template_project/data/georef-switzerland-kanton.geojson') as f:
     gs = json.load(f)
-
+@st.cache
 ren_en_df = pd.read_csv("./template_project/data/renewable_power_plants_CH.csv")
 ren_en_df.head()
 
